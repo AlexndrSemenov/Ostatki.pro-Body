@@ -1,0 +1,123 @@
+.product {
+  width: 240px;
+  margin: 0 40px auto 0;
+}
+
+@media screen and (max-width: 360px) {
+  .product {
+    margin: auto;
+  }
+}
+
+.product__brands_title {
+  margin: 0 auto 12px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.product__brands_table {
+  padding: 0;
+  margin: 13px auto 0 0;
+}
+
+.product__brands_cell {
+  display: flex;
+}
+
+.product__brands_checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 0 13px 16px 0;
+  cursor: pointer;
+  border: 3px solid black;
+  box-sizing: border-box;
+  background-image: url(../images/checkmark.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 50%;
+}
+
+.product__brands_checkbox_title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.product__price_wrapper {
+  margin: 30px auto 30px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+}
+
+.product__price_slider {
+  height: 20px;
+  background-color: #6FCF97;
+}
+
+.product__price_inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.product__price_label {
+  display: flex;
+  align-items: center;
+  width: 115px;
+  height: 27px;
+  border: 1px solid #C4C4C4;
+  border-radius: 6px;
+}
+
+.product__price_text {
+  margin: auto 2px auto 10px;
+}
+
+.product__price_input {
+  width: 65%;
+  border: none;
+}
+
+.product__button {
+  width: 100%;
+  height: 43px;
+  cursor: pointer;
+  margin: 10px 0 auto 0;
+  background-color: lightgrey;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 360px) {
+  .product__button {
+    margin: 10px auto auto auto;
+  }
+}
+
+.product__button_active {
+  background-color: #ff7900;
+}
+
+.product__smallQuantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 30px 0;
+  height: 24px;
+}
+
+.product__smallQuantity_title {
+  margin: 0 auto 0 0 ;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
