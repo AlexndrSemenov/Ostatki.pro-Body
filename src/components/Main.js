@@ -8,14 +8,19 @@ import {
   PHONE_SCREEN_WIDTH,
   PAD_SCREEN_WIDTH,
   LAPTOP_SCREEN_WIDTH,
+  DESKTOP_MINI_SCREEN_WIDTH,
+  DESKTOP_SCREEN_WIDTH,
   NUMBER_MOVIES_ON_SCREEN_PHONE,
   NUMBER_MOVIES_ON_SCREEN_PHONE_ROW,
   NUMBER_MOVIES_ON_SCREEN_PAD,
   NUMBER_MOVIES_ON_SCREEN_PAD_ROW,
   NUMBER_MOVIES_ON_SCREEN_LAPTOP,
   NUMBER_MOVIES_ON_SCREEN_LAPTOP_ROW,
+  NUMBER_MOVIES_ON_SCREEN_DESKTOP_MINI,
   NUMBER_MOVIES_ON_SCREEN_DESKTOP,
   NUMBER_MOVIES_ON_SCREEN_DESKTOP_ROW,
+  NUMBER_MOVIES_ON_SCREEN_PROJECTOR,
+  NUMBER_MOVIES_ON_SCREEN_PROJECTOR_ROW
 } from '../utils/constants';
 
 function Main({ electricTools, data }) {
@@ -104,11 +109,15 @@ function Main({ electricTools, data }) {
       setNumberMoviesOnScreen(isRow ? NUMBER_MOVIES_ON_SCREEN_PAD_ROW : NUMBER_MOVIES_ON_SCREEN_PAD);
     } else if (screenWidth < LAPTOP_SCREEN_WIDTH) {
       setNumberMoviesOnScreen(isRow ? NUMBER_MOVIES_ON_SCREEN_LAPTOP_ROW : NUMBER_MOVIES_ON_SCREEN_LAPTOP);
-    } else {
+    } else if (screenWidth < DESKTOP_MINI_SCREEN_WIDTH) {
+      setNumberMoviesOnScreen(isRow ? NUMBER_MOVIES_ON_SCREEN_DESKTOP_ROW : NUMBER_MOVIES_ON_SCREEN_DESKTOP_MINI);
+    } else if (screenWidth < DESKTOP_SCREEN_WIDTH) {
       setNumberMoviesOnScreen(isRow ? NUMBER_MOVIES_ON_SCREEN_DESKTOP_ROW : NUMBER_MOVIES_ON_SCREEN_DESKTOP);
+    }else {
+      setNumberMoviesOnScreen(isRow ? NUMBER_MOVIES_ON_SCREEN_PROJECTOR_ROW : NUMBER_MOVIES_ON_SCREEN_PROJECTOR);
     }
   }
-
+    
   // изначально отображаемые виды электроинструмента
   const initialDisplayedCards = electricTools.slice(0, numberMoviesOnScreen);
 

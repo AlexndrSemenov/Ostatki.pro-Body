@@ -20,7 +20,7 @@
   border-radius: 16px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
   .launch__promotion {
     display: none;
   }
@@ -44,15 +44,21 @@
   align-items: center;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1250px) {
+  .launch__wrapper {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .launch__wrapper {
     margin-top: 20px;
-    height: auto;
   }
 }
 
 .launch__button {
   cursor: pointer;
+  margin-right: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -63,11 +69,7 @@
   margin-left: 15px;
 }
 
-.launch__button:last-of-type {
-  margin-right: 15px;
-}
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1250px) {
   .launch__button {
     line-height: 37px;
   }
@@ -92,14 +94,12 @@
   align-items: center;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 700px) {
   .launch__wrapper2 {
     display: block;
     height: auto;
   }
 }
-
-
 
 .launch__button_text {
   display: flex;
@@ -139,7 +139,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 700px) {
   .launch__wrapper3 {
     margin-top: 20px;
     width: auto;
@@ -184,7 +184,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 610px) {
   .launch__wrapper5 {
     display: none;
   }

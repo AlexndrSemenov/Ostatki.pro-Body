@@ -20,7 +20,13 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+  .body {
+    margin: 0 35px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .body {
     margin: 0 20px;
   }
@@ -54,7 +60,6 @@
 
 @media screen and (max-width: 1500px) {
   .body__photo-grid {
-    width: calc(282px * 3 + 17px);
     margin: 0 auto;
   }
 }
@@ -62,13 +67,6 @@
 @media screen and (max-width: 1024px) {
   .body__photo-grid {
     margin-top: 20px;
-    width: calc(282px * 3 + 17px);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .body__photo-grid {
-    width: 266px;
   }
 }
 
