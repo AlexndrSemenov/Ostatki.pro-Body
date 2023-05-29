@@ -28,7 +28,7 @@ const Card = ({ card, isRow }) => {
             </div>
           </div>
         </>
-      : 
+      :
         <>
           <img src={card.link} alt={card.name} className='photo-grid__image'/>
           <div className='photo-grid__wrapper2'>

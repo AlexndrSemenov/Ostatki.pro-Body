@@ -24,7 +24,7 @@ import {
 } from '../utils/constants';
 
 function Main({ electricTools, data }) {
-  // получаем список всех брендов электроинструмента
+  //получаем список всех брендов электроинструмента
   const brandsUnique = {};
   electricTools.forEach((item) => {
     brandsUnique[item.brand] = true;
@@ -82,7 +82,7 @@ function Main({ electricTools, data }) {
   // отображаемые виды электроинструмента
   const [displayedTypes, setDisplayedTypes] = useState(initialDisplayedTypes);
 
-  // _______________________________________________________________________________
+  // // _______________________________________________________________________________
 
   // переключение вида карточек с грида на строки и наоборот
 
@@ -313,6 +313,12 @@ function Main({ electricTools, data }) {
 
         <p className="body__subscription_text">Нажимая «Подписаться» вы соглашаетесь с Условиями использования сайта и Политикой обработки персональных данных.</p>
       </section>
+
+      <div>------------------------------end Body--------------------------------</div>
+      <section>
+        <Link to="/addCard" style={{ color:"blue", margin: "100px" }}>Добавить карточку товара</Link>
+      </section>
+      <div>--------------------------------------------------------------------------</div>
     </div>
   );
 }

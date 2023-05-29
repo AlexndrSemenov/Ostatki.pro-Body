@@ -1,5 +1,7 @@
 # Ostatki.pro - компонент Body
 
-Создать локальную копию проекта: git clone git@github.com:AlexndrSemenov/Ostatki.pro-Body.git
+Фронтенд. Бэкенд проекта доступен по адресу: https://github.com/AlexndrSemenov/Ostatki.pro-Body.Backend
 
-Запустить проект на локальном сервере: npm start
+## Запуск проекта
+
+`npm run start` — запускает сервер
